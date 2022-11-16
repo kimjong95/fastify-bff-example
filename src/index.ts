@@ -11,7 +11,7 @@ const server = fastify({
 
 // router config
 server.register(apiRoutes, {
-  prefix: "/bff", // optional
+  prefix: "/", // optional
 });
 
 // router config

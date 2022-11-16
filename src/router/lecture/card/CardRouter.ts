@@ -1,5 +1,6 @@
 import { AxiosReturn, getAxios } from "@sku/data";
 import fastify, { FastifyPluginCallback } from "fastify";
+import { join } from "path";
 
 const server = fastify();
 
@@ -10,7 +11,7 @@ const cardRoutes: FastifyPluginCallback = async (fastify, opts) => {
     const params = req.params as { cardId: string };
     const axios = getAxios();
     const response = await axios
-      .get(`https://stg.mysuni.sk.com/api/lecture/cards/${params.cardId}`, {
+      .get(`http://lecture:8080/cards/${params.cardId}`, {
         headers: {
           cineroomids: (req.raw.headers.cineroomids as string) || "",
           audienceid: (req.raw.headers.audienceid as string) || "",
@@ -21,6 +22,7 @@ const cardRoutes: FastifyPluginCallback = async (fastify, opts) => {
       .catch((err) =>
         console.log("##################################################\n", err)
       );
+    console.log(response.card.id);
     return response.card.id;
   });
 };
