@@ -23,16 +23,16 @@ server.register(routes_1.default, {
     prefix: "/bff", // optional
 });
 // router config
-server.register(require("@fastify/http-proxy"), {
-    upstream: "http://stg.mysuni.sk.com",
-    // prefix: "/api", // optional
-    http2: false, // optional
-});
+// server.register(require("@fastify/http-proxy"), {
+//   upstream: "http://stg.mysuni.sk.com",
+//   // prefix: "/api", // optional
+//   http2: false, // optional
+// });
 // test code/////
-server.get("/bff/ping", (request, reply) => __awaiter(void 0, void 0, void 0, function* () {
+server.get("/ping", (request, reply) => __awaiter(void 0, void 0, void 0, function* () {
     return "ponggg\n";
 }));
-server.get("/bff/pong", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+server.get("/pong", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     if (!res.status(200)) {
         console.log("--");
         return "1234";

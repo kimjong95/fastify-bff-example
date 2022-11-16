@@ -8,8 +8,8 @@ interface AppConfig {
 }
 
 const appConfig: AppConfig = {
-  host: "localhost",
-  port: 8004,
+  host: "0.0.0.0",
+  port: 8080,
 };
 
 export default function AppConfig() {

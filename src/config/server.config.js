@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const appConfig = {
-    host: "localhost",
-    port: 8004,
+    host: "0.0.0.0",
+    port: 8080,
 };
 function AppConfig() {
     return appConfig;

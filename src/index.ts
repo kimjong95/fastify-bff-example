@@ -15,18 +15,18 @@ server.register(apiRoutes, {
 });
 
 // router config
-server.register(require("@fastify/http-proxy"), {
-  upstream: "http://stg.mysuni.sk.com",
-  // prefix: "/api", // optional
-  http2: false, // optional
-});
+// server.register(require("@fastify/http-proxy"), {
+//   upstream: "http://stg.mysuni.sk.com",
+//   // prefix: "/api", // optional
+//   http2: false, // optional
+// });
 
 // test code/////
-server.get("/bff/ping", async (request, reply) => {
+server.get("/ping", async (request, reply) => {
   return "ponggg\n";
 });
 
-server.get("/bff/pong", async (req, res) => {
+server.get("/pong", async (req, res) => {
   if (!res.status(200)) {
     console.log("--");
     return "1234";
