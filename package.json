@@ -14,7 +14,7 @@
     "@fastify/cors": "^8.2.0",
     "@fastify/http-proxy": "^8.3.0",
     "@sku/core": "^0.0.72",
-    "@sku/data": "0.3.73",
+    "@sku/data": "0.5.27",
     "axios": "^0.27.2",
     "fastify": "^4.9.2",
     "http": "^0.0.1-security",

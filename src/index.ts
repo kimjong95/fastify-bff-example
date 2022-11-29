@@ -6,12 +6,12 @@ import AppConfig from "./config/server.config";
 import apiRoutes from "./router/routes";
 
 const server = fastify({
-  logger: true,
+  logger: false,
 });
 
 // router config
 server.register(apiRoutes, {
-  prefix: "/", // optional
+  prefix: "/bff", // optional
 });
 
 // router config
