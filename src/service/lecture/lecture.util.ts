@@ -1,11 +1,3 @@
-import {
-  BFFPrerequisiteCard,
-  BlendedChapter,
-  LearningContent,
-  PrerequisiteCard,
-  Student,
-} from "@sku/data";
-
 export function getPrerequisiteCards(
   prerequisiteCards: PrerequisiteCard[],
   prerequisiteStudents?: Student[]

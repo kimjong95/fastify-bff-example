@@ -1,5 +1,4 @@
 import cors from "@fastify/cors";
-import { AxiosReturn, getAxios } from "@sku/data";
 import fastify, { FastifyListenOptions } from "fastify";
 import { callbackify } from "util";
 import AppConfig from "./config/server.config";

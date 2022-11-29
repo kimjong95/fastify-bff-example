@@ -1,10 +1,3 @@
-import {
-  BFFCard,
-  BFFPrerequisiteCard,
-  BlendedChapter,
-  BlendedChapterContent,
-  LearningContent,
-} from "@sku/data";
 import { findCubesByIds_bff } from "../../api/cube/cube/CubeApi";
 import {
   findBlendedChapter,
